@@ -41,3 +41,18 @@ public:
         // Tidak ada pengurangan saldo
     }
 };
+
+// ==========================================================
+// 3. DERIVED CLASS - REKENING KONVENSIONAL
+// ==========================================================
+class RekeningKonvensional : public RekeningBank {
+public:
+    RekeningKonvensional(string nama, double saldoAwal) : RekeningBank(nama, saldoAwal) {}
+
+    // Implementasi potongAdmin: Potongan flat Rp 15.000
+    void potongAdmin() override {
+        double biayaAdmin = 15000;
+        saldo -= biayaAdmin;
+        cout << "[Konvensional] " << namaNasabah << ": Dipotong biaya admin Rp 15.000. ";
+    }
+};
