@@ -8,4 +8,10 @@ class baseclass final{
             cout << "Hallo, saya function dari base class\n";
         }
     };
-  
+    
+class baseclass1 {
+public:
+    virtual void perkenalan() {
+        cout << "halllo saya function dari base class";
+   }
+};
