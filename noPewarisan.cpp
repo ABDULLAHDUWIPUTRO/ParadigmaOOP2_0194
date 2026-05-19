@@ -15,3 +15,10 @@ public:
         cout << "halllo saya function dari base class";
    }
 };
+
+class derivedclass : public baseclass1 {
+    public:
+        void perkenalan() override {
+            cout << "Hallo, saya function dari derived class\n";
+        }
+    };
