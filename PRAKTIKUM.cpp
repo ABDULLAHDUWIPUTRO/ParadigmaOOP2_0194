@@ -14,3 +14,6 @@ protected:
 
 public:
     RekeningBank(string nama, double saldoAwal) : namaNasabah(nama), saldo(saldoAwal) {}
+
+    // Pure Virtual Function - Membuat class ini menjadi Abstract Class
+    virtual void potongAdmin() = 0; 
